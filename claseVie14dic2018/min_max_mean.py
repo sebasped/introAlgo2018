@@ -4,20 +4,24 @@
 
 def getMin(listaValores):
     cantidad = len(listaValores)
-    min = listaValores[0]
-    i = 1
+    i = 0
+    min = 0.0
     while i <= cantidad-1:
-        if listaValores[i] < min:
+        if i == 0:
+            min = listaValores[i]
+        elif listaValores[i] < min:
             min = listaValores[i]
         i = i + 1
     return min
 
 def getMax(listaValores):
     cantidad = len(listaValores)
-    max = listaValores[0]
-    i = 1
+    i = 0
+    max = 0.0
     while i <= cantidad-1:
-        if listaValores[i] > max:
+        if i == 0:
+            max = listaValores[i]
+        elif listaValores[i] > max:
             max = listaValores[i]
         i = i + 1
     return max
