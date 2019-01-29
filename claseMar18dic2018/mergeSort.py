@@ -28,10 +28,10 @@ def mergeAux(listaIzq,listaDer):
 
 
 def mergeSort(lista):
-    # precondición: lista no vacía.
+    
     long = len(lista)
 
-    if long == 1 : #caso base conquer
+    if long <= 1 : #caso base conquer
         RV = lista
     else :
         #divide
